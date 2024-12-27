@@ -1,0 +1,439 @@
+/*=========== TABLE OF CONTENTS ===========
+1. CSS Variables
+2. Utility CSS
+3. Common CSS
+==========================================*/
+
+/*-------------------------------------
+  1. CSS Variables
+--------------------------------------*/
+:root {
+  /*------Color variables------*/
+  --white: #ffffff;
+  --dark___2: #6e6e6e;
+  --darkslategray: #191919;
+  --gray_700: #626262;
+  --red_100: #ecd6c8;
+  --gray_50: #fff9f6;
+  --blue_gray_100: #cfcfcf;
+  --blue_gray_100_01: #d6d6d6;
+  --orange_a700: #fd650b;
+  --black_A700_01: #000000;
+  --black_600: #656d76;
+  --gray_shadow: #00000029;
+
+  /*------Shadow variables------*/
+  --shadow-xs: 0 0 13px 5px #00000029;
+
+  /*------Border radius variables------*/
+  --radius-xs: 8px;
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 40px;
+
+  /*------Spacing variables------*/
+  --space-xs: 4px;
+  --space-sm: 6px;
+  --space-md: 8px;
+  --space-lg: 10px;
+  --space-xl: 12px;
+  --space-2xl: 13px;
+  --space-3xl: 14px;
+  --space-4xl: 16px;
+  --space-5xl: 22px;
+  --space-6xl: 24px;
+  --space-7xl: 30px;
+  --space-8xl: 31px;
+  --space-9xl: 40px;
+  --space-10xl: 42px;
+  --space-11xl: 48px;
+  --space-12xl: 100px;
+}
+
+/*-------------------------------------
+  2. Utility CSS
+--------------------------------------*/
+.flex-col-center-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/*-------------------------------------
+  3. Common CSS
+--------------------------------------*/
+.frame-1000001641 {
+  align-self: stretch;
+}
+
+.header {
+  display: flex;
+  background-color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  padding: 18px 120px;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.header__logo {
+  height: 40px;
+  width: 128px;
+  object-fit: contain;
+}
+
+.frame-33 {
+  color: var(--darkslategray);
+  margin-bottom: 6px !important;
+  font-size: 16px;
+  font-weight: 600;
+  gap: var(--space-10xl);
+  align-self: flex-end;
+  display: flex;
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.dhi-group {
+  cursor: pointer;
+  &:hover > :last-child {
+    display: block;
+  }
+}
+
+.header__menu-item {
+  gap: var(--space-sm);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__menu-item-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.dhi-group-3 {
+  position: absolute;
+  top: auto;
+  min-width: 200px;
+  padding-top: var(--space-xl);
+  z-index: 99;
+  display: none;
+  group-hover {
+    display: block;
+  }
+}
+
+.menu-container {
+  background-color: var(--white);
+  box-shadow: var(--shadow-xs);
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--radius-xs);
+}
+
+.menu-group {
+  gap: var(--space-7xl);
+  display: flex;
+}
+
+.mega-menu__link {
+  color: var(--black_600) !important;
+  font-size: 16px;
+  font-weight: 400;
+  align-self: center;
+  @media only screen and (max-width: 550px) {
+    font-size: 13px;
+  }
+}
+
+.menu {
+  gap: var(--space-4xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-4xl);
+  }
+}
+
+.mega-menu__title {
+  color: var(--black_A700_01) !important;
+  font-size: 18px;
+  font-weight: 700;
+  @media only screen and (max-width: 550px) {
+    font-size: 15px;
+  }
+}
+
+.menu-column {
+  gap: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-xl);
+  }
+}
+
+.menu-link {
+  align-self: center;
+  @media only screen and (max-width: 550px) {
+    font-size: 13px;
+  }
+}
+
+.mega-menu__text {
+  color: var(--black_600) !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header__actions {
+  gap: var(--space-lg);
+  display: flex;
+  width: 18%;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.header__search {
+  color: var(--darkslategray) !important;
+  padding-right: var(--space-7xl);
+  font-weight: 700;
+  gap: var(--space-md);
+  flex-grow: 1;
+  height: 28px;
+  @media only screen and (max-width: 550px) {
+    padding-right: 20px;
+  }
+}
+
+.icon--24px--search {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+}
+
+.header__login-button {
+  color: var(--white) !important;
+  padding-left: var(--space-6xl);
+  padding-right: var(--space-6xl);
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--darkslategray) !important;
+  height: 42px;
+  min-width: 94px;
+  border-radius: 10px !important;
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.profile-section__experience-title {
+  letter-spacing: -0.4px;
+}
+
+.profile-section__bio {
+  color: var(--dark___2) !important;
+  line-height: 180%;
+}
+
+.profile-section__contact-group--phone {
+  gap: var(--space-2xl);
+  display: flex;
+  align-items: center;
+}
+
+.profile-section__experience-duration {
+  color: var(--dark___2) !important;
+}
+
+.profile-section__contact-group--email {
+  gap: var(--space-xl);
+  display: flex;
+  align-items: center;
+}
+
+.profile-section__phone-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.social-media-icons {
+  gap: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-media-icons__icons {
+  gap: var(--space-4xl);
+  align-self: stretch;
+  display: flex;
+}
+
+.social-media-icons__icon--facebook {
+  height: 30px;
+  width: 30px;
+}
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  display: flex;
+  background-color: var(--white);
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.footer__frame {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 1050px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.footer__content {
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.footer__info {
+  align-self: center;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.footer__info-group {
+  gap: var(--space-lg);
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__info-logo {
+  height: 40px;
+  align-self: center;
+  width: 40px;
+}
+
+.footer__info-address {
+  margin-top: 42px !important;
+  gap: var(--space-md);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__info-phone {
+  margin-top: 28px;
+}
+
+.footer__info-email {
+  margin-top: 4px;
+}
+
+.footer__info-social {
+  margin-top: 26px;
+  gap: var(--space-xl);
+  display: flex;
+}
+
+.static-mania-2022--link {
+  margin-top: 112px;
+}
+
+.footer__links {
+  margin-top: 24px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.footer__links-list {
+  gap: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-v1-home-v2-link {
+  align-self: flex-start;
+}
+
+.footer__links-column {
+  gap: var(--space-3xl);
+  display: flex;
+  width: 28%;
+  flex-direction: column;
+  align-items: flex-start;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.footer__links-column-2 {
+  gap: var(--space-3xl);
+  align-self: flex-start;
+  display: flex;
+  width: 28%;
+  flex-direction: column;
+  align-items: flex-start;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.footer__links-column-3 {
+  gap: var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__links-title {
+  font-weight: 700 !important;
+}
+
+.profile-section__experience {
+  gap: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

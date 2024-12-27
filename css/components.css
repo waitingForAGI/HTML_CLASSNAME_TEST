@@ -1,0 +1,251 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Button CSS
+2. Input CSS
+3. Selectbox CSS
+4. Textarea CSS
+5. Text CSS
+6. Heading CSS
+7. Container CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Button CSS
+--------------------------------------*/
+.ui.button.round {
+  border-radius: var(--radius-sm);
+}
+
+.ui.button.size-xl {
+  height: 56px;
+  padding-left: var(--space-4xl);
+  padding-right: var(--space-4xl);
+  font-size: 16px;
+}
+
+.ui.button.size-md {
+  height: 42px;
+  padding-left: var(--space-6xl);
+  padding-right: var(--space-6xl);
+  font-size: 16px;
+}
+
+.ui.button.size-lg {
+  height: 48px;
+  padding-left: var(--space-6xl);
+  padding-right: var(--space-6xl);
+  font-size: 16px;
+}
+
+.ui.button.outline.blue_gray_100 {
+  color: var(--darkslategray);
+  border: 1px solid var(--blue_gray_100);
+}
+
+.ui.button.outline.dark - 2 {
+  color: var(--darkslategray);
+  border: 1px solid var(--dark___2);
+}
+
+.ui.button.fill.darkslategray {
+  background-color: var(--darkslategray);
+  color: var(--white);
+}
+
+.ui.button {
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: var(--radius-sm);
+}
+
+/*-------------------------------------
+  2. Input CSS
+--------------------------------------*/
+.ui.input.square {
+  border-radius: 0px;
+}
+
+.ui.input.round {
+  border-radius: var(--radius-sm);
+}
+
+.ui.input.size-xs {
+  height: 28px;
+  padding-right: var(--space-7xl);
+  font-size: 18px;
+}
+
+.ui.input.size-xl {
+  height: 60px;
+  padding-left: var(--space-3xl);
+  padding-right: var(--space-3xl);
+  font-size: 18px;
+}
+
+.ui.input.fill.white {
+  background-color: var(--white);
+  color: var(--dark___2);
+}
+
+.ui.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: text;
+  font-size: 18px;
+}
+
+/*-------------------------------------
+  3. Selectbox CSS
+--------------------------------------*/
+.ui.selectbox.round {
+  border-radius: var(--radius-sm);
+}
+
+.ui.selectbox.size-lg {
+  height: 48px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 16px;
+}
+
+.ui.selectbox.outline.dark - 2 {
+  color: var(--darkslategray);
+  border: 1px solid var(--dark___2);
+}
+
+.ui.selectbox {
+  display: flex;
+}
+
+/*-------------------------------------
+  4. Textarea CSS
+--------------------------------------*/
+.ui.textarea.round {
+  border-radius: var(--radius-sm);
+}
+
+.ui.textarea.size-sul1 {
+  height: 152px;
+  font-size: 18px;
+  padding: 18px;
+}
+
+.ui.textarea.tarwhite.white {
+  background-color: var(--white);
+  border: 1px solid var(--blue_gray_100_01) !important;
+}
+
+/*-------------------------------------
+  5. Text CSS
+--------------------------------------*/
+.ui.text.size-textlg {
+  font-size: 18px;
+  font-weight: 400;
+  @media only screen and (max-width: 550px) {
+    font-size: 15px;
+  }
+}
+
+.ui.text.size-textxl {
+  font-size: 20px;
+  font-weight: 400;
+  @media only screen and (max-width: 550px) {
+    font-size: 17px;
+  }
+}
+
+.ui.text {
+  color: var(--orange_a700);
+  font-family: Marko One;
+}
+
+/*-------------------------------------
+  6. Heading CSS
+--------------------------------------*/
+.ui.heading.size-h___4_web___1800 {
+  letter-spacing: -0.56px;
+  font-size: 28px;
+  font-weight: 800;
+  @media only screen and (max-width: 1050px) {
+    font-size: 26px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 23px;
+  }
+}
+
+.ui.heading.size-headingmd {
+  font-size: 16px;
+  font-weight: 600;
+  @media only screen and (max-width: 550px) {
+    font-size: 13px;
+  }
+}
+
+.ui.heading.size-headinglg {
+  font-size: 18px;
+  font-weight: 600;
+  @media only screen and (max-width: 550px) {
+    font-size: 15px;
+  }
+}
+
+.ui.heading.size-headingxl {
+  font-size: 20px;
+  font-weight: 600;
+  @media only screen and (max-width: 550px) {
+    font-size: 17px;
+  }
+}
+
+.ui.heading.size-headingxxl {
+  font-size: 24px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 20px;
+  }
+}
+
+.ui.heading.size-headingxxxxxxl {
+  font-size: 54px;
+  font-weight: 800;
+  @media only screen and (max-width: 1050px) {
+    font-size: 46px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 45px;
+  }
+}
+
+.ui.heading {
+  color: var(--darkslategray);
+  font-family: Manrope;
+}
+
+/*-------------------------------------
+  7. Container CSS
+--------------------------------------*/
+.container-xs {
+  max-width: 1150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-sm {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
