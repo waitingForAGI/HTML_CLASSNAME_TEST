@@ -1,0 +1,67 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Selectbox CSS
+2. Heading CSS
+3. Text CSS
+4. Container CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Selectbox CSS
+--------------------------------------*/
+.ui.selectbox.round {
+  border-radius: var(--radius-sm);
+}
+
+.ui.selectbox.size-lg {
+  height: 48px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 16px;
+}
+
+.ui.selectbox.outline.dark - 2 {
+  color: var(--darkslategray);
+  border: 1px solid var(--dark___2);
+}
+
+.ui.selectbox.fill.white {
+  background-color: var(--white);
+  color: var(--dark___2);
+}
+
+.ui.selectbox {
+  display: flex;
+}
+
+/*-------------------------------------
+  2. Heading CSS
+--------------------------------------*/
+.ui.heading {
+  color: var(--darkslategray);
+  font-family: Manrope;
+}
+
+/*-------------------------------------
+  3. Text CSS
+--------------------------------------*/
+.ui.text {
+  color: var(--orange_a700);
+  font-family: Marko One;
+}
+
+/*-------------------------------------
+  4. Container CSS
+--------------------------------------*/
+.container-xs {
+  max-width: 1164px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-sm {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

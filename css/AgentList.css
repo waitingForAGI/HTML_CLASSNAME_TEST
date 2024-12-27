@@ -1,0 +1,271 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.user-profile-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile__image {
+  height: 282px;
+  border-top-right-radius: var(--radius-sm);
+  border-top-left-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.user-profile__content {
+  border-bottom-left-radius: var(--radius-sm);
+  border-bottom-right-radius: var(--radius-sm);
+  background-color: var(--white);
+  padding: var(--space-4xl);
+  border: 1px solid var(--blue_gray_100_01);
+}
+
+.user-profile__info {
+  margin-left: 6px;
+  margin-right: 6px;
+  gap: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.user-profile__review {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.user-profile__rating {
+  display: flex;
+}
+
+.user-profile__button {
+  color: var(--darkslategray);
+  padding-left: 33px;
+  padding-right: 33px;
+  font-size: 16px;
+  font-weight: 600;
+  align-self: stretch;
+  text-align: center;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--blue_gray_100_01);
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.pagination__button-1 {
+  height: 48px;
+  color: var(--darkslategray);
+  margin-left: 4px;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  min-width: 48px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--blue_gray_100);
+}
+
+/*-------------------------------------
+  2. Page CSS
+--------------------------------------*/
+.columnrealestat-1 {
+  gap: 56px;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-6xl);
+  }
+}
+
+.agent-list__title {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.agent-list__title-text {
+  letter-spacing: -0.72px;
+  font-size: 36px;
+  font-weight: 800;
+  @media only screen and (max-width: 1050px) {
+    font-size: 34px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 32px;
+  }
+}
+
+.agent-list__filters {
+  gap: var(--space-5xl);
+  display: flex;
+  align-self: stretch;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.agent-list__address-row {
+  background-color: var(--white);
+  flex: 1;
+  padding: var(--space-4xl);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--blue_gray_100_01);
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+  }
+}
+
+.agent-list__address-input {
+  color: var(--dark___2);
+  padding-left: var(--space-3xl);
+  padding-right: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  gap: var(--space-3xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+}
+
+.agent-list__dropdown {
+  color: var(--dark___2) !important;
+  font-size: 18px;
+  font-weight: 700;
+  gap: var(--space-3xl);
+  background-color: var(--white) !important;
+  width: 12%;
+  background-image: url(../public/images/img_arrowdown_dark_-_2.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: calc(100% - 18px);
+  padding: var(--space-5xl) 18px;
+  border-radius: 10px !important;
+  border: 1px solid var(--blue_gray_100_01);
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.agent-list__search-button {
+  color: var(--white);
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  gap: var(--space-xl);
+  background-color: var(--darkslategray);
+  text-align: center;
+  height: 60px;
+  min-width: 128px;
+  border-radius: var(--radius-sm);
+}
+
+.icon--20px--search {
+  height: 20px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.columnbruno {
+  padding-left: 56px;
+  padding-right: 56px;
+  gap: var(--space-10xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-7xl);
+  }
+}
+
+.agent-list-one {
+  display: grid;
+  gap: 24px;
+  row-gap: var(--space-7xl);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
+  @media only screen and (max-width: 1050px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media only screen and (max-width: 550px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.pagination__group {
+  flex: 1;
+  display: flex;
+  @media only screen and (max-width: 550px) {
+    align-self: stretch;
+  }
+}
+
+.pagination__button {
+  height: 48px;
+  color: var(--darkslategray);
+  padding-left: 19px;
+  padding-right: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  min-width: 48px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gray_700);
+}
+
+.pagination__next-button {
+  color: var(--darkslategray);
+  padding-left: 17px;
+  padding-right: 17px;
+  font-size: 16px;
+  font-weight: 600;
+  gap: var(--space-xs);
+  text-align: center;
+  height: 48px;
+  min-width: 134px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--blue_gray_100);
+}
+
+.icon--16px--arrow---right {
+  height: 16px;
+  margin-top: 2px;
+  margin-bottom: 6px;
+  width: 16px;
+  object-fit: contain;
+}
