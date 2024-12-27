@@ -1,0 +1,404 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.user-profile {
+  background-color: var(--white);
+  flex: 1;
+  display: flex;
+  align-self: stretch;
+  padding: var(--space-4xl);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--blue_gray_100_01);
+}
+
+.user-profile__row {
+  gap: var(--space-4xl);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section__phone-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.contact-section__phone-number {
+  color: var(--dark___2) !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.property-details {
+  flex: 1;
+  display: flex;
+  align-self: stretch;
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.property-details__room {
+  gap: var(--space-3xl);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.property-details__bath {
+  padding-left: 56px;
+  padding-right: 56px;
+  gap: var(--space-3xl);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.property-details__room-icon {
+  height: 20px;
+  align-self: flex-start;
+  width: 20px;
+}
+
+.property-details__room-text {
+  color: var(--gray_700) !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*-------------------------------------
+  2. Page CSS
+--------------------------------------*/
+.columnrealestat {
+  gap: var(--space-10xl);
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-7xl);
+  }
+}
+
+.contact-section {
+  gap: var(--space-9xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section__intro {
+  gap: var(--space-5xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section__title {
+  letter-spacing: -1.08px;
+  font-size: 54px;
+  font-weight: 800;
+  @media only screen and (max-width: 1050px) {
+    font-size: 46px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 40px;
+  }
+}
+
+.contact-section__description {
+  color: var(--dark___2) !important;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  align-self: stretch;
+  line-height: 180%;
+}
+
+.contact-section__form {
+  gap: 50px;
+  display: flex;
+  background-color: var(--white);
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 24px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--blue_gray_100_01);
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding: 20px;
+  }
+}
+
+.contact-section__form-container {
+  gap: var(--space-8xl);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+  }
+}
+
+.contact-section__message {
+  gap: var(--space-5xl);
+}
+
+.contact-section__message-title {
+  color: var(--darkslategray) !important;
+  letter-spacing: -0.56px;
+  font-size: 28px;
+  font-weight: 800;
+  @media only screen and (max-width: 1050px) {
+    font-size: 26px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 24px;
+  }
+}
+
+.contact-section__fields {
+  gap: var(--space-3xl);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+}
+
+.contact-section__field-list {
+  gap: var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section__input-box {
+  background-color: var(--white);
+  display: flex;
+  padding: var(--space-5xl) 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--blue_gray_100_01);
+}
+
+.contact-section__label {
+  color: var(--dark___2) !important;
+  margin-bottom: 90px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-section__input-box-1 {
+  background-color: var(--white);
+  display: flex;
+  padding: 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--blue_gray_100_01);
+}
+
+.contact-section__label-1 {
+  color: var(--dark___2) !important;
+  margin-bottom: 86px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-section__submit-button {
+  color: var(--white);
+  padding-left: 34px;
+  padding-right: 34px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--darkslategray);
+  align-self: stretch;
+  text-align: center;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.contact-section__divider {
+  height: 534px;
+  background-color: var(--blue_gray_100_01);
+  width: 1px;
+  @media only screen and (max-width: 1050px) {
+    width: 534px;
+    height: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.contact-section__info {
+  gap: var(--space-8xl);
+  align-self: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+  }
+}
+
+.contact-section__address {
+  margin-right: 24px;
+  gap: var(--space-4xl);
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}
+
+.contact-section__address-block {
+  gap: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-section__address-text {
+  color: var(--dark___2) !important;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 180%;
+}
+
+.contact-section__contact-info {
+  gap: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section__phone {
+  gap: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section__email {
+  gap: var(--space-3xl);
+  display: flex;
+  align-items: center;
+}
+
+.contact-section__email-address {
+  color: var(--dark___2) !important;
+  font-size: 18px;
+  font-weight: 600;
+  align-self: flex-end;
+}
+
+.contact-section__social {
+  gap: var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-section__social-icons {
+  gap: var(--space-5xl);
+  align-self: stretch;
+  display: flex;
+}
+
+.contact-section__card {
+  margin-right: 24px;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}
+
+.contact-section__card-image {
+  height: 260px;
+  border-top-right-radius: var(--radius-sm);
+  border-top-left-radius: var(--radius-sm);
+  width: 100%;
+  object-fit: cover;
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+  }
+}
+
+.contact-section__location {
+  border-bottom-left-radius: var(--radius-sm);
+  border-bottom-right-radius: var(--radius-sm);
+  background-color: var(--white);
+  padding: var(--space-7xl) 20px;
+  border: 1px solid var(--red_100);
+  @media only screen and (max-width: 550px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.contact-section__location-info {
+  gap: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section__location-text {
+  font-size: 16px;
+  font-weight: 600;
+  align-self: flex-end;
+}
+
+.contact-section__amenities-list {
+  gap: var(--space-5xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section__details {
+  gap: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section__details-button {
+  color: var(--white);
+  padding-left: 34px;
+  padding-right: 34px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--darkslategray);
+  text-align: center;
+  height: 48px;
+  min-width: 214px;
+  border-radius: var(--radius-sm);
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.contact-section__price {
+  letter-spacing: -0.48px;
+  font-size: 24px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+}
